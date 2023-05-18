@@ -1,16 +1,16 @@
 # RANDOM QUIZ QUESTIONS API
 
-#Used tech stack
+# Used tech stack
 Python, Flask-API, SQLAlchemy, PostgreSQL
 
-#General description
+# General description
 API is designed to recieve post requests with a JSON in the following form:
 {"questions_num": integer}
 
 As a result, new questions are added into a database and a response is returned to the user (the last added question is returned).
 Questions are taken randomly from a public QUIZ-API.
 
-#Example of a post-request
+# Example of a post-request
 request - {"questions_num": 2}
 new quiz questions added to a database :
 {
@@ -35,7 +35,7 @@ response: [] (if database was empty before the request)
     (the last previous added item if database was not empty before the request)
 
 
-#Database description
+# Database description
 The database contains the following data: 
 id of the quizquestion, 
 text of a question (request field)
