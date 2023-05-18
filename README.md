@@ -11,21 +11,27 @@ As a result, new questions are added into a database and a response is returned 
 Questions are taken randomly from a public QUIZ-API.
 
 # Example of a post-request
+
 request - {"questions_num": 2}
+
 new quiz questions added to a database :
-{
+
+        {
         "id": 31023,
         "request": "Some small wedding receptions eliminate this greeting line that was once de rigeueur",
         "response": "the receiving line (the reception line accepted)",
         "datetime": "2022-12-30 18:50:22"
-    },
+    }
+ 
     {
         "id": 189006,
         "request": "Mei Xiang to Bao Bao (born 2013)",
         "response": "mother",
         "datetime": "2022-12-30 21:30:15"
     }
+    
 response: [] (if database was empty before the request)
+
           {
         "id": 63337,
         "request": "11 years after his last Top 20 solo hit, this \"Sweet Caroline\" singer had the third top-grossing tour of 1993",
@@ -37,10 +43,15 @@ response: [] (if database was empty before the request)
 
 # Database description
 The database contains the following data: 
+
 id of the quizquestion, 
+
 text of a question (request field)
+
 text of an answer (response field)
+
 creation date (datetime field)
+
 date, when question was added to a database (date field, not returned to a user)
 
 
